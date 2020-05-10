@@ -1,0 +1,123 @@
+
+/*css de toda a aplicação */
+.ffy{
+    background: #FBDFDB;
+border-radius: 30px;
+}
+
+h3{
+    background: #fafafa9f;
+    opacity: 100%;
+    width: 90px;
+}
+
+.links  a{
+    font-family: Roboto-Regular;
+font-size: 16px;
+color: #111111;
+line-height: 33px;
+ margin: 0 16px;
+ text-align: center;
+}
+
+.links a:hover,.p{
+    color: #000000;
+    transition: color 200ms;
+    }
+   #wrapper img{
+        width: 236px;
+        height: 350px;
+    }
+    
+    /*PAGINA SOBRE*/
+.Descrição .foody,
+h1{
+    font-family: Roboto-Bold;
+font-size: 36px;
+color: #111111;
+    }
+
+    .Descrição .foody,
+    h2{
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    
+    }
+
+    /*RECEITAS HOME*/
+
+    img{
+        border-radius: 15px;
+        border-radius: 15px;
+        width: 940px;
+        height: 366px;
+    }
+
+    /*RECEITAS*/
+
+    .Burgezão{
+        font-family: Roboto-Regular;
+        font-size: 18px;
+        color: #444444;
+        line-height: 28px;
+    }
+
+    .Burgezão h1{
+        font-family: Roboto-Bold;
+font-size: 24px;
+color: #111111;   }
+
+
+    /*CRIAR RECEITAS*/
+    .Cadastrar h3{
+        font-family: Roboto-Bold;
+font-size: 24px;
+color: #111111;
+    }
+
+    .img h3{
+        font-family: Roboto-Bold;
+font-size: 16px;
+color: #111111;
+    }
+
+    .preparo h3{
+        font-family: Roboto-Bold;
+font-size: 16px;
+color: #111111;
+    }
+
+    .informações h3{
+        font-family: Roboto-Bold;
+font-size: 16px;
+color: #111111;
+    }
+/*estilazação dos botão de cadastrar e atualizar as receitas */
+    .button{
+        font-family: Roboto-Bold;
+font-size: 16px;
+color: #FFFFFF;
+text-align: right;
+
+background: #6558C3;
+border-radius: 4px;
+border-radius: 4px;
+    }
+
+    .delete{
+        font-family: Roboto-Bold;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: right;
+background: #DC4747;
+border-radius: 4px;
+border-radius: 4px;
+    }
+/*esltilização da class section da   imagem do chef*/
+    div.wrapper{
+   width: 216px;
+   height: 300px;
+  position: relative;
+    }

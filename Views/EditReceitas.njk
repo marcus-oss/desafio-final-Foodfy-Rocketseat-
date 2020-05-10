@@ -1,0 +1,70 @@
+
+{% block content %}
+
+<section class="container form">
+<link rel="stylesheet" href= "/Style.css">
+<form  method="POST" action="/products">
+<div class="Links">
+   <a href="/homeFoodyfy">Home</a>
+  <a href="/Sobre">Sobre</a>
+  <a href="/Receitas">Receitas</a>
+  <a href="/CadastrarReceitas"> Cadastrar Receitas</a>
+  <a href="/EditReceitas"> Editar Receitas</a>
+ </div>
+
+<div class="header">
+ <h3>Editar Receitas{{ReceitastId}}</h3>
+</div>
+
+<div class="img">
+ <h3>imagem da Receitas</h3>
+</div>
+
+<div id="ingredients">
+  <div class="ingredient">
+    <input type="text" name="ingredients[]" value="" placeholder="Ingredient" />
+  </div>
+</div>
+<button type="button" class="add-ingredient">Add Ingredient</button>
+
+<div class="Preparo">
+ <h3>Modo de Preparo</h3>
+</div>
+
+<div class="Informações">
+ <h3>Informações Adicionais</h3>
+</div>
+
+
+<input 
+ type="hidden" 
+ name="id" 
+ values={{Receitas.id}}>
+</div>
+
+<button  class="button edit"type="Submit">Atualizar Receitas</button>
+
+
+
+
+</form>
+
+<form id="form-delete" action="/products?_method=DELETE" method="post"  enctype ="multipart/form-data">
+<input type="hidden" name="id"value="{{product.id}}">
+<button class="button delete" type="submit">Deletar Receitas</button>
+
+</section>
+</div>
+
+<script>
+const  formDelete = document.querySelector("#form-delete")
+formDelete.addEventListener("submit",function(event){
+const confirmation = confirm("Deseja deletar?")
+if(!confirmation) {
+  event.preventDefault()
+}
+})
+</script>
+
+
+{% endblock content %}
